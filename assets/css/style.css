@@ -1,0 +1,107 @@
+/** @format */
+
+:root {
+  --smoke-color: rgb(132, 136, 132);
+  --almond-color: rgb(234, 221, 202);
+}
+
+* {
+  margin: 0; /* space between border and container; elements will be flush against end*/
+  padding: 0; /* space between content and border */
+  font-family: sans-serif;
+}
+
+/* FULL page container */
+.container {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box; /* padding+margin is part of total width, wont exceed limit */
+}
+
+/* container for navbar */
+.main-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* pushes left/right to edges, middle is evenly spaced */
+  align-items: center;
+  padding: 25px 0%; /* top/bottom 25px, sides are 0% */
+  background-color: var(--smoke-color);
+}
+
+.logo {
+  cursor: pointer; /* mouse turns into pointer on hover; not a link */
+  padding-left: 10px;
+}
+
+.logo p {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.nav-bar {
+  flex-direction: column;
+}
+
+.nav-bar li {
+  display: inline-block; /* block has a line break after element; elements wont sit next to each other */
+  padding: 0px 15px; /* top, l+r space between each link bar */
+}
+
+.nav-bar li a {
+  font-family: "Stick No Bills", sans-serif;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 500;
+  color: black;
+  transition: all 0.4s ease 0s; /* time for mouse hover to change color */
+}
+
+.nav-bar li a:hover {
+  color: brown;
+}
+
+.about-me {
+  display: flex;
+  flex-wrap: wrap; /* items wont leave container */
+  background-color: var(--almond-color);
+}
+
+/* if image wont fit it'll shrink */
+.about-me img {
+  max-width: 100%;
+}
+
+.about-me h2 {
+  padding-top: 10%;
+  font-family: "Molle", cursive, sans-serif;
+  text-decoration: underline;
+}
+
+.about-me p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 22px;
+  margin-top: 2%;
+}
+
+.split-window {
+  flex: 40%;
+  padding: 5%;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--smoke-color);
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--almond-color);
+}
+
+.contact ul {
+  list-style: none;
+}
