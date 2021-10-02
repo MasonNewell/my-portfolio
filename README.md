@@ -4,7 +4,7 @@
 
 # Description
 
-This is a work-in-progress of my work portfolio.
+This is a work-in-progress of my work portfolio
 
 # Screenshot
 
