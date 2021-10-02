@@ -138,13 +138,13 @@ main div p {
 
 #work img {
   padding: 2%;
-  width: 200px;
-  height: 200px;
+  max-width: 250px;
+  max-height: 250px;
   transform: rotate(2deg);
 }
 
-#work :first-child {
-  flex: 2 0 200px;
+#work a:first-child {
+  flex: 1;
 }
 
 footer {

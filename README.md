@@ -8,7 +8,7 @@ This is a work-in-progress of my work portfolio.
 
 # Screenshot
 
-![Screenshot](Develop/assets/images/"nameOfPhotO.png")
+![Screenshot](./images/HW2_sub_ss.png)
 
 # Link
 
