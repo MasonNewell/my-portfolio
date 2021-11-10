@@ -84,8 +84,11 @@ section div {
     justify-content: center;
     align-items: center;
   }
-  header nav {
+  header {
     justify-content: space-around;
+  }
+  nav {
+    padding-right: 0%;
   }
   h2,
   h3 {
@@ -132,8 +135,15 @@ main img {
 main div p {
   text-align: center;
   font-size: 2vw;
-  padding: 10px 20px;
+  padding: 100px 20px;
 }
+
+/* TEST */
+#about-me {
+  display: flex;
+}
+
+/* TEST END */
 
 /* flex container for work section */
 #work {
