@@ -1,188 +1,183 @@
-/** @format */
+* {
+  box-sizing: border-box;
+}
 
 :root {
-  --powderBlue-color: rgb(176, 224, 230);
-  --lightblue-color: rgb(51, 51, 54);
-  --header-color: rgb(8, 75, 114);
-  --background-color: rgba(236, 236, 236, 0.836);
+  box-sizing: border-box;
+  --powderBlue-color: #b0e0e6;
+  --dark-gray: rgb(51, 51, 54);
+  --hover-color: rgb(15, 240, 90);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-* {
+body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  box-sizing: border-box;
+  line-height: 1.5;
 }
 
-body {
-  font-family: sans-serif;
-  background-color: var(--background-color);
+h2 {
+  margin: 0;
 }
 
-header {
-  padding: 20px 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--lightblue-color);
+.name-tag {
+  background-color: powderblue;
+  padding: 15px;
 }
 
-h1 {
-  background-color: var(--powderBlue-color);
-  padding: 10px 2% 0px 2%;
-  font-size: 3vw;
-}
-
-nav {
-  padding-right: 50px;
-}
-
-nav a {
-  padding: 10px;
+.navbar {
+  background-color: var(--dark-gray);
   font-family: "Stick No Bills", sans-serif;
-  font-size: 2.5vw;
-  font-weight: 500;
+}
+
+.nav_list {
+  margin: 0;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav_item {
+  margin: 0 2rem;
+  list-style: none;
+}
+
+.nav_item a {
+  text-decoration: none;
+  font-size: 22px;
   color: var(--powderBlue-color);
-  transition: all 0.4s ease 0s;
 }
 
-nav a:hover {
-  color: chartreuse;
+.nav_item a:hover {
+  color: var(--hover-color);
 }
 
-/* image below navbar */
-section {
-  height: 300px;
-  background-image: url(images/photo-1505142468610-359e7d316be0.jpg);
-  background-size: cover;
-  position: relative;
+.hero-image {
+  background-image: url("./images/hero.jpg");
+  height: 400px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-/* subtitle below navbar */
-section div {
-  position: absolute;
-  background-color: var(--powderBlue-color);
-  padding: 25px;
-  right: 100px;
-  bottom: 50px;
+.wrapper {
+  max-width: 90%;
+  margin: 0 auto;
 }
 
-/* reorganizes page if screen is too narrow */
-@media screen and (max-width: 1000px) {
-  header,
-  main,
-  footer {
-    display: block;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  header {
-    justify-content: space-around;
-  }
-  nav {
-    padding-right: 0%;
-  }
-  h2,
-  h3 {
-    border-bottom: 4px solid var(--header-color);
-  }
+/* About-me ============================== */
+.flex-section {
+  margin: 50px 0;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
 }
 
-/* adds border only if page is flex-direction row */
-@media screen and (min-width: 1000px) {
-  h2,
-  h3 {
-    border-right: 4px solid var(--header-color);
-  }
+.flex-section > h2 {
+  flex: 0 0 20%;
+  text-align: right;
+  padding-right: 15px;
+  font-size: 3vw;
+  line-height: 1.1;
+  border-right: 4px solid var(--dark-gray);
 }
 
-main {
+.flex-section > h3 {
+  font-size: 1.6rem;
+}
+
+.flex-section > div {
+  flex: 0 0 70%;
+}
+
+/* Work ====================================== */
+.work-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* header styles */
-main h2,
-footer h3 {
-  width: 30%;
-  font-size: 3.2vw;
-  color: var(--header-color);
-  text-align: center;
-  padding-top: 25px;
-}
-
-/* allocates part of flex container */
-main div,
-footer div {
-  width: 60%;
-}
-
-main img {
-  max-width: 100%;
-  padding: 10px 20px;
-  margin-top: 10px;
-}
-
-main div p {
-  text-align: center;
-  font-size: 2vw;
-  padding: 100px 20px;
-}
-
-/* TEST */
-#about-me {
-  display: flex;
-}
-
-/* TEST END */
-
-/* flex container for work section */
-#work {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 25px 0;
-}
-
-#work img {
-  padding: 2%;
-  max-width: 100%;
-  transform: rotate(2deg);
-}
-
-#work a:first-child {
-  flex: 2;
-}
-
-#work a:not(:first-child) {
-  flex: 1;
-}
-
-/* flex container for footer */
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding-bottom: 50px;
-}
-
-footer div a {
-  padding: 10px;
-  font-family: "Stick No Bills", sans-serif;
-  font-size: 2vw;
-  font-weight: 500;
+.work-item {
+  max-height: 130px;
+  min-height: 130px;
   color: black;
-  transition: all 0.4s ease 0s;
+  display: flex;
+  align-items: flex-end;
+  flex-basis: 40%;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  background-size: 150%;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  transition: all 0.3s;
+}
+
+.work-item:first-child {
+  min-height: 400px;
+  flex-basis: 100%;
+}
+
+.work-item h3 {
+  font-size: 1.2rem;
+}
+
+.work-item div {
+  background-color: rgb(83, 169, 180);
+}
+
+.work-item:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-showcase {
+  background-image: url(./images/roomf.png);
+}
+
+/* Contact ==================================== */
+.contact address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact address a {
+  padding: 3px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-style: normal;
+  color: black;
+}
+
+/* Column layout */
+@media (max-width: 600px) {
+  .nav_item:first-child,
+  .nav_list {
+    flex-direction: column;
+  }
+}
+/* Row layout */
+@media (min-width: 601px) {
+  /* Mason Newell */
+  .nav_item:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+  }
+}
+
+/* test */
+.second {
+  background-image: url(./images/coming-soon-1898936_640.jpg);
+}
+
+.third {
+  background-image: url(./images/coming-soon-1898936_640.jpg);
 }
