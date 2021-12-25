@@ -130,7 +130,10 @@ h2 {
 }
 
 .work-item div {
-  background-color: rgb(83, 169, 180);
+  background-color: rgba(139, 166, 170, 0.9);
+  text-align: center;
+  padding: 1px;
+  margin-top: 0;
 }
 
 .work-item:hover {
@@ -150,9 +153,9 @@ h2 {
 }
 
 .contact address a {
-  padding: 3px;
+  padding: 1px;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-style: normal;
   color: black;
 }
@@ -175,9 +178,9 @@ h2 {
 
 /* test */
 .second {
-  background-image: url(./images/coming-soon-1898936_640.jpg);
+  background-image: url(./images/pw_gen.jpg);
 }
 
 .third {
-  background-image: url(./images/coming-soon-1898936_640.jpg);
+  background-image: url(./images/readme_gen.png);
 }
