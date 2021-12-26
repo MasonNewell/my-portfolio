@@ -142,18 +142,23 @@ h2 {
 
 .main-showcase {
   background-image: url(./images/roomf.png);
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 /* Contact ==================================== */
 .contact address {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .contact address a {
-  padding: 1px;
+  padding: 10px;
   text-decoration: none;
   font-size: 1.2rem;
   font-style: normal;
@@ -176,7 +181,7 @@ h2 {
   }
 }
 
-/* test */
+/* Work showcase items */
 .second {
   background-image: url(./images/pw_gen.jpg);
 }
