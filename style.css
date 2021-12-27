@@ -17,7 +17,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Stick No Bills", sans-serif;
-  line-height: 1.5;
 }
 
 h2 {
@@ -106,14 +105,14 @@ h2 {
 }
 
 .work-item {
-  max-height: 130px;
+  /* max-height: 130px; */
   min-height: 130px;
   color: black;
   display: flex;
   align-items: flex-end;
   flex-basis: 40%;
-  padding: 0 0 20px 0;
-  margin: 0.5em;
+  /* padding: 0 0 20px 0; */
+  margin: 1.5em;
   background-size: 150%;
   text-decoration: none;
   background-blend-mode: soft-light;
@@ -130,9 +129,8 @@ h2 {
 }
 
 .work-item div {
-  background-color: rgba(139, 166, 170, 0.9);
+  background-color: var(--powderBlue-color);
   text-align: center;
-  padding: 1px;
 }
 
 .work-item:hover {
@@ -182,6 +180,14 @@ h2 {
 }
 
 /* Work showcase items */
+.second,
+.third {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
 .second {
   background-image: url(./images/pw_gen.jpg);
 }
