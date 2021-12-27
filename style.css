@@ -168,7 +168,8 @@ h2 {
 /* Column layout */
 @media (max-width: 600px) {
   .nav_item:first-child,
-  .nav_list {
+  .nav_list,
+  .work-container {
     flex-direction: column;
   }
 }
