@@ -111,7 +111,6 @@ h2 {
   display: flex;
   align-items: flex-end;
   flex-basis: 40%;
-  /* padding: 0 0 20px 0; */
   margin: 1.5em;
   background-size: 150%;
   text-decoration: none;
@@ -120,7 +119,6 @@ h2 {
 }
 
 .work-item:first-child {
-  min-height: 400px;
   flex-basis: 100%;
 }
 
@@ -139,7 +137,6 @@ h2 {
 
 .main-showcase {
   background-image: url(./images/roomf.png);
-  height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
